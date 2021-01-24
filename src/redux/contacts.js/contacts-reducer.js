@@ -24,7 +24,7 @@ const filter = createReducer('', {
   [changeFilter]: (_, { payload }) => payload,
 });
 
-const error = createReducer(null, {});
+// const error = createReducer(null, {});
 
 const loading = createReducer(false, {
   [fetchContactsRequest]: () => true,
@@ -42,5 +42,5 @@ export default combineReducers({
   items,
   filter,
   loading,
-  error,
+  // error,
 });
